@@ -1,0 +1,296 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --green-color: #198754;
+    --text-color: white;
+}
+
+html, body {
+    height: 100%;
+    overflow-x: hidden; /* Hides horizontal scrollbar */
+}
+
+.section-heading {
+    font-size: medium;
+    color: green;
+    font-weight: 1000;
+    padding: 1rem 0rem;
+}
+
+nav {
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--green-color);
+    color: var(--text-color);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 10000000;
+    box-sizing: border-box; /* Ensures padding is included in width */
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+nav > div:nth-child(2) {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+nav > div:nth-child(2) > h2 {
+    font-weight: 500;
+    font-size: 1.3rem;
+}
+
+nav > div:nth-child(3) {
+    width: 13%; /* Adjusted width */
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+nav > div:nth-child(3) > button {
+    font-size: 1rem;
+    padding: 1rem 1rem;
+    border-radius: 0.5rem;
+}
+
+nav > div:nth-child(3) > button:nth-child(1) {
+    background-color: var(--text-color);
+    color: black;
+    border: none;
+}
+
+nav > div:nth-child(3) > button:nth-child(2) {
+    background: transparent;
+    border: 1px solid var(--text-color);
+    color: var(--text-color);
+}
+
+/* Carousel */
+main {
+    background-image: url(https://gotravel123.netlify.app/assets/4.jpg);
+    height: 50vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+main > div {
+    text-align: center;
+}
+
+main > div > button {
+    background: none;
+    border: none;
+    background-color: aliceblue;
+    font-size: medium;
+    padding: 1rem;
+    font-weight: 500;
+    border-radius: 0.4rem;
+}
+
+main > div:nth-child(2) > h2,
+main > div:nth-child(2) > h3 {
+    margin-bottom: 0.5rem;
+    font-size: 1.8rem;
+}
+
+main > div:nth-child(2) > h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.8rem;
+}
+
+main > div:nth-child(1) > button,
+main > div:last-child > button {
+    background: transparent;
+}
+
+main > div:nth-child(2) > button {
+    cursor: pointer;
+}
+
+main > div:nth-child(2) > button:hover {
+    background-color: aquamarine;
+}
+
+#aboutUs {
+    position: relative;
+    top: 2rem;
+    width: 80%;
+    margin: auto;
+    margin-bottom: 2rem;
+    display: flex;
+}
+
+#aboutUs > div {
+    width: 45%;
+}
+
+#aboutUs > div > h2 {
+    font-size: 1.7rem;
+}
+
+#aboutUs > div > h3 {
+    font-size: 2.5rem;
+}
+
+#aboutUs > div > img {
+    width: 100%;
+    object-fit: contain;
+}
+
+#aboutUs > div:nth-child(1) {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+#aboutUs > div > p {
+    font-size: 1.5rem;
+}
+
+#destination {
+    position: relative;
+    top: 4rem;
+}
+
+#destination > div {
+    text-align: center;
+}
+
+#destination > div > h2 {
+    margin-bottom: 0rem;
+}
+
+#destination > div:first-child {
+    margin-bottom: 2rem;
+}
+
+#destination > div:last-child {
+    display: flex;
+    width: 80%;
+    margin: auto;
+    margin-bottom: 4rem;
+    justify-content: space-between;
+}
+
+#destination > div:last-child > div {
+    width: 24%;
+    border: 1px solid grey;
+    padding-bottom: 1.4rem;
+}
+
+#destination > div:last-child > div > img {
+    width: 100%;
+    height: 50vh;
+    object-fit: cover;
+    margin-bottom: 0.8rem;
+}
+
+#destination > div:last-child > div > h4 {
+    margin-bottom: 0.6rem;
+    font-size: 1rem;
+}
+
+#destination > div:last-child > div > div {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+#destination > div:last-child > div > div > p {
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+#destination > div:last-child > div > div > h5 {
+    font-size: large;
+}
+
+#testimonial {
+    background-image: url(image1.jpg);
+    background-size: cover;
+    position: relative;
+    top: 4rem;
+    margin-bottom: 1rem;
+    display: flex;
+    height: 80vh;
+    width: 100%;
+}
+
+#testimonial > div {
+    width: 70%;
+    background-color: transparent;
+    margin: auto;
+    background: rgba(255, 255, 255, 0.21);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(7.1px);
+    -webkit-backdrop-filter: blur(7.1px);
+    border: 1px solid rgba(255, 255, 255, 0.33);
+    padding: 6rem 0rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+
+#testimonial > div > div:nth-child(2) {
+    width: 50%;
+}
+
+#testimonial > div > div:nth-child(2) > h3 {
+    font-size: 2rem;
+    color: #198754;
+}
+
+#subscribe {
+    top: 4rem;
+    background-image: url(Image2.jpg);
+    background-size: cover;
+    height: 60vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    padding: 2rem 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+#subscribe > h3 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+#subscribe > form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 1rem;
+}
+
+#subscribe > form > input[type="submit"] {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: var(--green-color);
+    color: var(--text-color);
+}
